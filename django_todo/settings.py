@@ -32,7 +32,9 @@ SECRET_KEY = 'zpz*6mma20cz!p+0*hdmfis-)mfzq6vs7i#nv4#f+(m7hz&+3w'
 DEBUG = development
 
 ALLOWED_HOSTS = [os.environ.get('HOSTNAME'),
-                 'sps992-django-todo.herokuapp.com']
+                 'sps992-django-todo.herokuapp.com',
+                 'localhost:8000',
+                 'localhost']
 
 host = os.environ.get('SITE_HOST')
 if host:
